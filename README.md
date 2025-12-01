@@ -109,16 +109,21 @@ Step 3 — Live Behavior
 -->Once detected → drones switch to intercept mode
 -->Flight paths logged & plotted
 
-##  **Defender Swarm Interception Logic (RIA)**
-SkyGuard uses a decentralized **Randomized Intercept Algorithm (RIA)** for coordinated multi-drone pursuit:
+## **Defender Swarm Interception Logic (RIA)**
 
-- Nearest drone becomes **Leader**
-- Leader moves directly toward the intruder
-- Other drones take random offset positions around the target
-- Swarm forms a **360° containment ring**
-- Interception triggers when *distance < threshold*
+SkyGuard uses a decentralized Randomized Intercept Algorithm (RIA) for smart multi-drone interception:
 
-This produces **non-linear, unpredictable pursuit paths**, making evasion extremely difficult for hostile drones.
+Nearest drone becomes the Leader
+
+Leader moves directly toward the intruder
+
+Support drones take random offset positions
+
+Swarm forms a 360° containment ring
+
+Interception occurs when distance < threshold
+
+Produces non-linear, unpredictable pursuit paths—very effective in stopping hostile drones.
 
 ---
 
@@ -141,5 +146,6 @@ SkyGuard is designed for future real-world deployment with:
 - Long-range secure swarm-to-swarm communication  
 - Outdoor-tested rugged hardware prototypes  
 - Integration with border surveillance & defense systems  
+
 
 
