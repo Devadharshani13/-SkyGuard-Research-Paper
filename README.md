@@ -1,15 +1,15 @@
-# **SkyGuard – AI-Enabled Swarm Defense Drone System**
 
+# **SkyGuard – AI-Enabled Swarm Defense Drone System**
 ### *Autonomous Multi-Drone Swarm for Intruder Detection, Tracking & Interception*
 
 ---
 
-##  **Overview**
+## 🚀 **Overview**
 
 **SkyGuard** is an AI-powered autonomous drone defense system designed to detect, track, and intercept unauthorized UAVs entering restricted airspace.  
-Using **YOLOv8 computer vision**, **multi-agent swarm coordination**, and **Microsoft AirSim**, SkyGuard simulates how defender drones collaborate to neutralize intruder drones **without GPS or internet**.
+Using **YOLOv8 computer vision**, **multi-agent swarm coordination**, and **Microsoft AirSim**, SkyGuard demonstrates how defender drones collaborate to neutralize intruders **without GPS or internet**.
 
-SkyGuard demonstrates how **edge AI + swarm robotics** can provide scalable, low-cost counter-drone security for:
+Built as a scalable, low-cost edge-AI defense solution for:
 
 - Border surveillance  
 - Airport protection  
@@ -19,42 +19,52 @@ SkyGuard demonstrates how **edge AI + swarm robotics** can provide scalable, low
 
 ---
 
-##  **Core Features**
+## 🎯 **Core Features**
 
 | Module                           | Description                                                       |
 | -------------------------------- | ----------------------------------------------------------------- |
-| **Real-time Intruder Detection** | YOLOv8-based object detection from drone cameras                  |
-| **Swarm Coordination**           | Multi-agent communication + Randomized Intercept Algorithm (RIA)  |
-| **Autonomous Navigation**        | AirSim flight physics, dynamic path planning & safety controls    |
-| **Simulation Environment**       | Photorealistic Unreal Engine Blocks world                         |
-| **Data Logging & Visualization** | CSV flight logs + Matplotlib trajectory plotting                  |
-| **Hardware Friendly**            | Supports Jetson Nano, Raspberry Pi 5, Intel Movidius              |
+| **Intruder Detection**           | YOLOv8-based drone detection                                      |
+| **Swarm Coordination**           | Broadcast communication + Randomized Intercept Algorithm (RIA)    |
+| **Autonomous Navigation**        | AirSim movement, physics & path control                           |
+| **Simulation Environment**       | Unreal Engine Blocks aerial world                                 |
+| **Data Logging & Visualization** | CSV logs + trajectory plotting                                    |
+| **Edge Hardware Ready**          | Jetson Nano, Raspberry Pi 5, Movidius support                     |
 
 ---
 
-##  **System Architecture**
-                 ┌────────────────────────────┐
-                 │      Perception Layer       │
-                 │   (YOLOv8 Drone Detection)  │
-                 └──────────────┬─────────────┘
-                                │
-          ┌─────────────────────┼──────────────────────┐
-          │                     │                      │
+## 🧠 **System Architecture**
+
+```
+
+```
+             ┌────────────────────────────┐
+             │      Perception Layer       │
+             │   (YOLOv8 Drone Detection)  │
+             └──────────────┬─────────────┘
+                            │
+      ┌─────────────────────┼──────────────────────┐
+      │                     │                      │
+```
+
 ┌─────────▼────────┐   ┌────────▼────────┐   ┌─────────▼────────┐
 │  Communication    │   │   Control &     │   │ Randomized        │
-│  (Broadcast Msg)  │   │ Navigation       │   │ Intercept Alg.    │
+│  (Broadcast Msg)  │   │   Navigation     │   │ Intercept Alg.    │
 └─────────┬────────┘   └────────┬────────┘   └─────────┬────────┘
-          │                     │                        │
-          └───────────────┬────┴──────┬─────────────────┘
-                          │           │
-                ┌─────────▼──┐   ┌────▼────────┐
-                │ Defender 0 │   │ Defender 1   │
-                └────────────┘   └──────────────┘
+│                     │                        │
+└───────────────┬────┴──────┬─────────────────┘
+│           │
+┌─────────▼──┐   ┌────▼────────┐
+│ Defender 0 │   │ Defender 1   │
+└────────────┘   └──────────────┘
 
-                ┌────────────────────────────┐
-                │     AirSim Environment     │
-                │  (Simulation + Physics)    │
-                └────────────────────────────┘
+```
+            ┌────────────────────────────┐
+            │     AirSim Environment     │
+            │  (Simulation + Physics)    │
+            └────────────────────────────┘
+```
+
+```
 
 ---
 
@@ -65,10 +75,9 @@ SkyGuard demonstrates how **edge AI + swarm robotics** can provide scalable, low
 - Microsoft AirSim (Unreal Engine)
 - Python 3.10
 - OpenCV, NumPy, Matplotlib
-- ZeroMQ (custom broadcast communication)
-- Windows & Linux Support
+- ZeroMQ / Custom Broadcast Messaging
 
-### **Hardware Compatibility**
+### **Hardware**
 - NVIDIA Jetson Nano  
 - Raspberry Pi 4 / 5  
 - Intel Movidius NCS2  
@@ -77,75 +86,87 @@ SkyGuard demonstrates how **edge AI + swarm robotics** can provide scalable, low
 ---
 
 ##  **Project Structure**
+
+```
+
 SkyGuard/
 │
-├── sim_runner.py # Main simulation controller
-├── airsim_env.py # Drone movement, control & sensor wrapper
-├── perception.py # YOLOv8 detection module
-├── comms.py # Drone-to-drone communication system
-├── qmix_trainer.py # Optional RL training module
-├── trainer.py # Training utilities
-├── visualize.py # Path & trajectory visualization tool
+├── sim_runner.py          # Main simulation controller
+├── airsim_env.py          # Drone movement, sensors & control
+├── perception.py          # YOLOv8 detection pipeline
+├── comms.py               # Swarm communication system
+├── qmix_trainer.py        # (Optional) RL training
+├── trainer.py             # Training utilities
+├── visualize.py           # Trajectory plotting
 │
-├── logs/ # CSV trajectory logs
-├── results/ # Plots & detection images
-├── models/ # YOLOv8 weights (e.g., yolov8n.pt)
-├── settings.json # AirSim multi-drone configuration
-└── README.md # Documentation
+├── logs/                  # CSV flight logs
+├── results/               # Detection images & plots
+├── models/                # YOLOv8 weights (e.g., yolov8n.pt)
+├── settings.json          # AirSim multi-drone configuration
+└── README.md              # Documentation
+
+````
 
 ---
 
 ##  **How SkyGuard Works**
 
-Step 1 — Launch AirSim
+### **Step 1 — Launch AirSim**
 ```powershell
 cd "C:\Users\YourName\Documents\AirSim\Blocks\WindowsNoEditor"
 .\Blocks.exe
-Step 2 — Run Simulation
+````
+
+### **Step 2 — Run Simulation**
+
+```bash
 python sim_runner.py
-Step 3 — Live Behavior
--->Defender drones take off
--->YOLOv8 begins scanning for intruders
--->Once detected → drones switch to intercept mode
--->Flight paths logged & plotted
+```
 
-## **Defender Swarm Interception Logic (RIA)**
+### **Step 3 — Autonomous Behavior**
 
-SkyGuard uses a decentralized Randomized Intercept Algorithm (RIA) for smart multi-drone interception:
+* Defender drones take off
+* YOLOv8 begins scanning
+* Once intruder detected → drones switch to intercept mode
+* Paths logged & plotted
 
-Nearest drone becomes the Leader
+---
 
-Leader moves directly toward the intruder
+##  **Defender Swarm Interception Logic (RIA)**
 
-Support drones take random offset positions
+SkyGuard uses a decentralized algorithm for multi-drone interception:
 
-Swarm forms a 360° containment ring
+* Nearest drone becomes **Leader**
+* Leader approaches intruder directly
+* Other drones take **random offset positions**
+* Swarm forms a **360° containment ring**
+* Interception occurs when distance < threshold
 
-Interception occurs when distance < threshold
-
-Produces non-linear, unpredictable pursuit paths—very effective in stopping hostile drones.
+Produces **non-linear, unpredictable pursuit**—effective for anti-drone missions.
 
 ---
 
 ## 🌍 **Real-World Scalability**
 
-SkyGuard is designed for future real-world deployment with:
+SkyGuard supports future deployment through:
 
-✔ **Edge AI inference** (Jetson Nano, Raspberry Pi 5, Movidius)  
-✔ **Thermal + LiDAR + Radar fusion** for all-weather detection  
-✔ **Encrypted mesh networking** resistant to jamming  
-✔ **GPS-denied navigation** using Visual SLAM / VIO  
-✔ Swarm expansion up to **5–10 autonomous defender drones**
+✔ Edge AI inference (Jetson / Pi)
+✔ Thermal + LiDAR + Radar fusion
+✔ Encrypted mesh networking
+✔ GPS-denied SLAM navigation
+✔ Expansion up to 5–10 defender drones
 
 ---
 
 ## 🔥 **Future Enhancements**
 
-- Reinforcement Learning (RL)–based intelligent interception  
-- Multi-sensor fusion (RGB + IR + LiDAR + Radar)  
-- Long-range secure swarm-to-swarm communication  
-- Outdoor-tested rugged hardware prototypes  
-- Integration with border surveillance & defense systems  
+* Reinforcement learning–based interception
+* Multi-sensor fusion (RGB + IR + LiDAR + Radar)
+* Long-range secure communication
+* Rugged outdoor-ready prototype
+* Integration with border security systems
 
 
 
+
+```
