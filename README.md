@@ -154,7 +154,7 @@ SkyGuard supports future deployment through:
 ✔ Thermal + LiDAR + Radar fusion
 ✔ Encrypted mesh networking
 ✔ GPS-denied SLAM navigation
-✔ Expansion up to 5–10 defender drones
+ ✔ Expansion up to 5–10 defender drones
 
 ---
 
@@ -165,6 +165,7 @@ SkyGuard supports future deployment through:
 * Long-range secure communication
 * Rugged outdoor-ready prototype
 * Integration with border security systems
+
 
 
 
