@@ -4,7 +4,7 @@
 
 ---
 
-## 🚀 **Overview**
+##  **Overview**
 
 **SkyGuard** is an AI-powered autonomous drone defense system designed to detect, track, and intercept unauthorized UAVs entering restricted airspace.  
 Using **YOLOv8 computer vision**, **multi-agent swarm coordination**, and **Microsoft AirSim**, SkyGuard simulates how defender drones collaborate to neutralize intruder drones **without GPS or internet**.
@@ -19,7 +19,7 @@ SkyGuard demonstrates how **edge AI + swarm robotics** can provide scalable, low
 
 ---
 
-## 🎯 **Core Features**
+##  **Core Features**
 
 | Module                           | Description                                                       |
 | -------------------------------- | ----------------------------------------------------------------- |
@@ -32,7 +32,7 @@ SkyGuard demonstrates how **edge AI + swarm robotics** can provide scalable, low
 
 ---
 
-## 🧠 **System Architecture**
+##  **System Architecture**
                  ┌────────────────────────────┐
                  │      Perception Layer       │
                  │   (YOLOv8 Drone Detection)  │
@@ -58,7 +58,7 @@ SkyGuard demonstrates how **edge AI + swarm robotics** can provide scalable, low
 
 ---
 
-## 🛠 **Tech Stack**
+##  **Tech Stack**
 
 ### **Software**
 - YOLOv8 (Ultralytics)
@@ -76,7 +76,7 @@ SkyGuard demonstrates how **edge AI + swarm robotics** can provide scalable, low
 
 ---
 
-## 📦 **Project Structure**
+##  **Project Structure**
 SkyGuard/
 │
 ├── sim_runner.py # Main simulation controller
@@ -97,19 +97,19 @@ SkyGuard/
 
 ##  **How SkyGuard Works**
 
-### **Step 1 — Launch AirSim**
+Step 1 — Launch AirSim
 ```powershell
 cd "C:\Users\YourName\Documents\AirSim\Blocks\WindowsNoEditor"
 .\Blocks.exe
-### **Step 2 — Run Simulation**
+Step 2 — Run Simulation
 python sim_runner.py
-### **Step 3 — Live Behavior**
+Step 3 — Live Behavior
 -->Defender drones take off
 -->YOLOv8 begins scanning for intruders
 -->Once detected → drones switch to intercept mode
 -->Flight paths logged & plotted
-##  **Defender Swarm Interception Logic (RIA)**
 
+##  **Defender Swarm Interception Logic (RIA)**
 SkyGuard uses a decentralized **Randomized Intercept Algorithm (RIA)** for coordinated multi-drone pursuit:
 
 - Nearest drone becomes **Leader**
@@ -122,7 +122,7 @@ This produces **non-linear, unpredictable pursuit paths**, making evasion extrem
 
 ---
 
-##  **🌍 Real-World Scalability**
+## 🌍 **Real-World Scalability**
 
 SkyGuard is designed for future real-world deployment with:
 
@@ -134,11 +134,12 @@ SkyGuard is designed for future real-world deployment with:
 
 ---
 
-## **🔥 Future Enhancements**
+## 🔥 **Future Enhancements**
 
 - Reinforcement Learning (RL)–based intelligent interception  
 - Multi-sensor fusion (RGB + IR + LiDAR + Radar)  
 - Long-range secure swarm-to-swarm communication  
 - Outdoor-tested rugged hardware prototypes  
 - Integration with border surveillance & defense systems  
+
 
