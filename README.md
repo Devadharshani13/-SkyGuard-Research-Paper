@@ -167,6 +167,3 @@ SkyGuard supports future deployment through:
 * Integration with border security systems
 
 
-
-
-```
