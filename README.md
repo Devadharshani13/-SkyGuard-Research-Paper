@@ -113,7 +113,7 @@ SkyGuard/
 
 ### **Step 1 — Launch AirSim**
 ```powershell
-cd "C:\Users\YourName\Documents\AirSim\Blocks\WindowsNoEditor"
+cd "C:\Users\sriram\Documents\AirSim\Blocks\WindowsNoEditor"
 .\Blocks.exe
 ````
 
@@ -165,6 +165,7 @@ SkyGuard supports future deployment through:
 * Long-range secure communication
 * Rugged outdoor-ready prototype
 * Integration with border security systems
+
 
 
 
