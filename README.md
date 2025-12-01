@@ -95,20 +95,20 @@ SkyGuard/
 
 ---
 
-## 🧪 **How SkyGuard Works**
+##  **How SkyGuard Works**
 
 ### **Step 1 — Launch AirSim**
 ```powershell
 cd "C:\Users\YourName\Documents\AirSim\Blocks\WindowsNoEditor"
 .\Blocks.exe
-###** Step 2 — Run Simulation**
+### **Step 2 — Run Simulation**
 python sim_runner.py
-###** Step 3 — Live Behavior**
+### **Step 3 — Live Behavior**
 -->Defender drones take off
 -->YOLOv8 begins scanning for intruders
 -->Once detected → drones switch to intercept mode
 -->Flight paths logged & plotted
-##  Defender Swarm Interception Logic (RIA)
+##  **Defender Swarm Interception Logic (RIA)**
 
 SkyGuard uses a decentralized **Randomized Intercept Algorithm (RIA)** for coordinated multi-drone pursuit:
 
@@ -122,7 +122,7 @@ This produces **non-linear, unpredictable pursuit paths**, making evasion extrem
 
 ---
 
-## 🌍 Real-World Scalability
+##  **🌍 Real-World Scalability**
 
 SkyGuard is designed for future real-world deployment with:
 
@@ -134,10 +134,11 @@ SkyGuard is designed for future real-world deployment with:
 
 ---
 
-## 🔥 Future Enhancements
+## **🔥 Future Enhancements**
 
 - Reinforcement Learning (RL)–based intelligent interception  
 - Multi-sensor fusion (RGB + IR + LiDAR + Radar)  
 - Long-range secure swarm-to-swarm communication  
 - Outdoor-tested rugged hardware prototypes  
 - Integration with border surveillance & defense systems  
+
