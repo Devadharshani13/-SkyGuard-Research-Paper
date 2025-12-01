@@ -4,7 +4,7 @@
 
 ---
 
-## 🚀 **Overview**
+##  **Overview**
 
 **SkyGuard** is an AI-powered autonomous drone defense system designed to detect, track, and intercept unauthorized UAVs entering restricted airspace.  
 Using **YOLOv8 computer vision**, **multi-agent swarm coordination**, and **Microsoft AirSim**, SkyGuard demonstrates how defender drones collaborate to neutralize intruders **without GPS or internet**.
@@ -19,7 +19,7 @@ Built as a scalable, low-cost edge-AI defense solution for:
 
 ---
 
-## 🎯 **Core Features**
+##  **Core Features**
 
 | Module                           | Description                                                       |
 | -------------------------------- | ----------------------------------------------------------------- |
@@ -32,7 +32,7 @@ Built as a scalable, low-cost edge-AI defense solution for:
 
 ---
 
-## 🧠 **System Architecture**
+##  **System Architecture**
 
 ```
 
@@ -146,7 +146,7 @@ Produces **non-linear, unpredictable pursuit**—effective for anti-drone missio
 
 ---
 
-## 🌍 **Real-World Scalability**
+##  **Real-World Scalability**
 
 SkyGuard supports future deployment through:
 
@@ -159,13 +159,14 @@ SkyGuard supports future deployment through:
 
 ---
 
-## 🔥 **Future Enhancements**
+##  **Future Enhancements**
 
 * Reinforcement learning–based interception
 * Multi-sensor fusion (RGB + IR + LiDAR + Radar)
 * Long-range secure communication
 * Rugged outdoor-ready prototype
 * Integration with border security systems
+
 
 
 
